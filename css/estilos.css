@@ -1,0 +1,67 @@
+body {
+  color: #444444;
+  font-size: 20px; }
+
+.destacado {
+  color: #336699; }
+
+table {
+  color: #444444;
+  background-color: orange; }
+
+header, footer {
+  color: yellow;
+  background-color: red;
+  padding: 20px; }
+
+footer {
+  position: fixed;
+  width: 100px;
+  bottom: 0px; }
+
+main {
+  padding: 20px; }
+
+body {
+  font-family: 'STIX Two Text' , serif; }
+
+ul {
+  list-style: none; }
+  ul li {
+    padding: 15px;
+    display: inline-block;
+    color: red; }
+    ul li a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #4444; }
+    ul li:hover {
+      color: yellow; }
+
+.box_uno {
+  color: white;
+  background-color: blue;
+  width: 360;
+  padding: 15px; }
+
+.box_dos {
+  background-color: green;
+  width: 360 -50;
+  padding: 30px; }
+
+/*p{
+    @if $animal == gato {
+        color: blue;
+    } @else if $animal== perro{
+        color: red;
+    } @else if $animal== caballo{
+        color: green;
+    } @else {
+        color: black;
+    }
+} */
+p {
+  color: red; }
+
+.contenido3 {
+  border: 1px dashed red; }

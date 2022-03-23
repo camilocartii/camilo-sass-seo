@@ -1,0 +1,75 @@
+@import "colores";
+@import "estructura";
+@import "tipografia";
+
+
+ul{
+    list-style: none;
+    li{
+        padding: 15px;
+        display: inline-block;
+        color: red;
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #4444;
+        }
+        &:hover{
+            color: yellow;
+        }
+    }
+}
+$ancho: 720;
+$blue: blue;
+$green: green;
+$espaciado: 5px;
+$espaciado2: 10px;
+$blanco: white;
+
+.box_uno{
+    color: $blanco;
+    background-color: $blue;
+    width: $ancho/2;
+    padding: $espaciado + $espaciado2;
+} 
+
+.box_dos{
+    $espaciado: 10px;
+    background-color: $green;
+    width: ($ancho/2) -50;
+    padding: ($espaciado *2) + $espaciado;
+}
+
+$animal: gato;
+$temperatura: 70;
+$mostrar: true;
+
+ /*p{
+    @if $animal == gato {
+        color: blue;
+    } @else if $animal== perro{
+        color: red;
+    } @else if $animal== caballo{
+        color: green;
+    } @else {
+        color: black;
+    }
+} */
+
+p{
+    @if $temperatura < 40{
+        color: yellow;
+    } @else if $temperatura < 60{
+        color: orange;
+    } @else if ($temperatura <=100){
+        color: red;
+    } @else {
+        color: black;
+    }
+}
+
+.contenido3{
+    @if $mostrar {
+        border: 1px dashed red;
+    }
+}

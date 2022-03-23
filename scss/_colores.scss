@@ -1,0 +1,18 @@
+$color_fuente:#444444;
+
+$color_primario: #336699;
+$fondo_primario: rgb(211, 211, 211);
+
+body{
+    color: $color_fuente;
+    font-size: 20px;
+}
+
+.destacado{
+    color: $color_primario;
+}
+
+table {
+    color: $color_fuente;
+    background-color: orange;
+}
